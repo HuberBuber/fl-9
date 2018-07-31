@@ -1,0 +1,142 @@
+
+/*  --- Task 1 ---  */
+@media print {
+	.tm-sidebar, #about, section:nth-child(n+3) {
+		display: none;
+	}
+
+	.tm-main-content {
+	margin-left: 0;
+	}
+
+	.tm-banner {
+	height: 250px;
+	margin-bottom: 0;
+	}
+
+	.flex-2-col {
+		display: block;
+	}
+
+	.tm-team-description-container {
+		max-width: 100%;
+		padding: 0 30px 0 50px;
+	}
+	.pad + .flex-item {
+		text-align: center;
+	}
+
+	.tm-section-title {
+		color: blue!important;
+	}
+}
+
+
+@media screen {
+
+/*  --- Task 2 ---  */
+	.box {
+		padding: 20px;
+	}
+	.box img {
+		border-radius: 50%;
+	}
+	.box-bg:hover{
+		background-color: #76cdd7;
+	}
+	.box .tm-section-title:hover {
+		color: #fff;
+		font-weight: bold;
+	}
+
+/*  --- Task 3 ---  */
+	p::first-letter {
+		color: #76cdd7;
+		font-size: 30px;
+	}
+/*  --- Task 4 ---  */
+.tm-sidebar, #about, section:nth-child(n+3), #home, .tm-main-content section:nth-child(2) .flex-2-col {
+		-webkit-box-shadow: 0px 0px 15px 5px rgba(46,37,14,1);
+		-moz-box-shadow: 0px 0px 15px 5px rgba(46,37,14,1);
+		box-shadow: 0px 0px 15px 5px rgba(46,37,14,1);
+	}
+
+/*  --- Task 5 ---  */
+
+	#home, section:nth-child(n+3),
+	.tm-main-content section:nth-child(2) .flex-2-col  {
+		position: relative;
+	}
+
+	#home::after, section:nth-child(n+3)::after, 
+	.tm-main-content section:nth-child(2) .flex-2-col::after {
+		content: ''; 
+		position: absolute; 
+    border-top: 25px solid #76cdd7; 
+    border-right: 100px solid transparent;
+    top: 0px;
+    left: 0px;
+	}
+
+
+/*  --- Task 6 ---  */
+	.carousel-content h2 {
+		color: gainsboro;
+		letter-spacing: 5px;
+	}
+
+/*  --- Task 7 ---  */
+	h2 + p {
+		font-style: italic;
+	}
+
+/*  --- Task 8 ---  */
+	.tm-section-description {
+		text-indent: 25px;
+	}
+
+/*  --- Task 9 ---  */
+	.tm-content-box ol li a {
+		text-decoration: none;
+		color: black;
+	}
+	.tm-content-box ol li a:hover {
+		color: #0275D8;
+		text-decoration: underline;
+	}
+	.tm-content-box ol li a:visited {
+		color: silver;
+	}
+	.tm-content-box ol li .text:after {
+		content: "New";
+		color: red;
+		vertical-align: text-top;
+		font-size: 10px;
+	}
+
+/*  --- Task 10 ---  */
+	.blocks div:nth-child(3) li:nth-child(odd) {
+		background-color: #E6E6E6;
+	}
+	.blocks div:nth-child(3) p:first-letter {
+		color: #000;
+	}
+
+/*  --- Task 11 ---  */
+	.tm-sidebar li:not(:last-child) {
+		border-bottom: 2px dotted silver;
+	}
+
+/*  --- Task 12 ---  */
+	input[type = "text"], button[type="submit"] {
+		color: red;
+	}
+	button[type="submit"]:hover{
+		background-color: #76cdd7;
+		color: #fff;
+		border-color: #76cdd7;
+	}
+
+
+
+}
